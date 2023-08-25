@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bank Assistant Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .chat-container {
+            max-width: 400px;
+            margin: 0 auto;
+            border: 1px solid #bd0e0e;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .message {
+            background-color: #6bcf1f;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .user-message {
+            background-color: #b71c1c;
+        }
+        .bot-message {
+            background-color: #4c238c;
+        }
+        .input-container {
+            display: flex;
+        }
+        #userInput {
+            flex-grow: 1;
+            padding: 5px;
+        }
+        #sendButton {
+            background-color: #089b0d;
+            border: none;
+            color: rgb(0, 0, 0);
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="message bot-message">Welcome to Bharat Bank Assistant! How can I assist you today?</div>
+    </div>
+    <div class="input-container">
+        <input type="text" id="userInput" placeholder="Type your message...">
+        <button id="sendButton">Send</button>
+    </div>
+
+    <script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
+<script>
+  window.botpressWebChat.init({
+      "composerPlaceholder": "Chat with bot",
+      "botConversationDescription": "This chatbot was built surprisingly fast with Botpress",
+      "botId": "3118faee-f76e-46dc-8867-30c066d48ee7",
+      "hostUrl": "https://cdn.botpress.cloud/webchat/v0",
+      "messagingUrl": "https://messaging.botpress.cloud",
+      "clientId": "3118faee-f76e-46dc-8867-30c066d48ee7"
+  });
+</script>
+</body>
+</html>
